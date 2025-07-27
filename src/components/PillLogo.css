@@ -1,0 +1,24 @@
+.pill-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 134px;
+  height: 31px;
+  padding: 0 9px;
+  gap: 7px;
+  border-radius: 24px;
+  background: linear-gradient(90deg, #7565D9 0%, #4D0ACD 100%);
+}
+
+.logo-icon {
+  width: 14.6px;
+  height: 14.6px;
+}
+
+.logo-text {
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  color: white;
+}

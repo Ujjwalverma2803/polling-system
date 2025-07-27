@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+.landing-container {
+  height: 100vh;
+  width: 100vw;
+  background: #f5f6fa;
+  font-family: 'Sora', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center; /* Center the text */
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* The welcome line */
+.welcome-text {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0;
+  color: #000000;
+  width: 737px;
+  max-width: 100%;
+}
+
+/* Bold part inside welcome text */
+.bold-text {
+  font-weight: 700;
+}
+
+/* The smaller subtext */
+.sub-text {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  letter-spacing: 0;
+  color: rgba(0, 0, 0, 0.5); /* Updated color */
+  width: 737px;
+  max-width: 100%;
+}
+
+.role-boxes {
+  display: flex;
+  gap: 40px;
+  margin-top: 50px;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  padding-top: 10px;
+}
+
+/* Base styles */
+.role-box {
+  width: 387px;
+  height: 143px;
+  border-radius: 10px;
+  padding: 25px 17px 15px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: black;
+  font-family: 'Sora', sans-serif;
+  text-align: left; /* left align text */
+}
+
+.role-box.student {
+  position: relative;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 25px 17px 15px 25px;
+  color: black;
+  box-sizing: border-box;
+  text-align: left;
+  border: 1px solid rgba(217, 217, 217, 1);
+  overflow: visible;  /* important for ::before */
+  z-index: 0;
+}
+
+.role-box.student.selected::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 10px;
+  padding: 3px;
+  background: linear-gradient(92.24deg, #7765DA -8.5%, #1D68BD 101.3%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: -1;
+}
+
+
+/* Teacher box base style */
+.role-box.teacher {
+  border: 1px solid rgba(217, 217, 217, 1);
+  border-radius: 10px;
+}
+
+/* Teacher box selected state */
+.role-box.teacher.selected {
+  border: 3px solid #7765DA;
+}
+
+
+/* Titles */
+.role-title {
+  font-weight: 600; /* SemiBold */
+  font-size: 23px;
+  line-height: 100%;
+  margin: 0;
+}
+
+/* Descriptions */
+.role-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  margin: 0;
+  color: rgba(69, 69, 69, 1);
+  /* No background */
+}
+
+.continue-button {
+  display: block;
+  margin: 40px auto 0 auto; /* center horizontally, margin top 40px */
+  width: 234px; /* approximate width */
+  height: 58px; /* approximate height */
+  border-radius: 34px;
+  padding: 17px 70px;
+  background: linear-gradient(99.18deg, #8F64E1 -46.89%, #1D68BD 223.45%);
+  border: none;
+  cursor: pointer;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600; /* SemiBold */
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  user-select: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.continue-button:hover {
+  box-shadow: 0 0 15px rgba(140, 138, 143, 0.7);
+}

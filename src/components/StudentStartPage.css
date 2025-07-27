@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+.student-start-container {
+  height: 100vh;
+  width: 100vw;
+  background: #f5f6fa;
+  font-family: 'Sora', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px; /* Reduced gap between elements */
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.start-title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  margin: 5 0 0 0 ;
+}
+
+.start-title strong {
+  font-weight: 700;
+}
+
+.start-subtext {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 28px; /* Reduced line height for tighter lines */
+  color: rgba(0, 0, 0, 0.5);
+  max-width: 737px;
+  margin: 14px auto 46px auto; /* Less vertical spacing */
+}
+
+.start-subtext strong {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.input-label {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(69, 69, 69, 1);
+  margin-bottom: 4px; /* Tighter gap above input */
+  width: 507px;
+  text-align: left;
+}
+
+.name-input {
+  background: rgba(242, 242, 242, 1);
+  width: 507px;
+  height: 60px;
+  border-radius: 2px;
+  border: none;
+  padding: 0 15px;
+  font-size: 18px;
+  font-family: 'Sora', sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  margin-bottom: 20px; /* Reduced space below input */
+}
+
+.name-input::placeholder {
+  color: #999;
+}
+
+.continue-button {
+  width: 234px;
+  height: 58px;
+  border-radius: 34px;
+  background: linear-gradient(99.18deg, #8F64E1 -46.89%, #1D68BD 223.45%);
+  border: none;
+  cursor: pointer;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  color: white;
+  user-select: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.continue-button:hover {
+  box-shadow: 0 0 15px rgba(143, 100, 225, 0.7);
+}

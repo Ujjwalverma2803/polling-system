@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+.teacher-start-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 20px;
+  font-family: 'Sora', sans-serif;
+  max-width: 740px;
+  margin: 0 auto;
+  margin-left: 60px;
+}
+
+.start-title {
+  font-size: 40px;
+  margin: 25px 0 10px;
+  text-align: left;
+}
+
+.teacher-start-subtext {
+  font-size: 19px;
+  text-align: left;
+  margin-bottom: 30px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.question-label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.teacher-question-box {
+  background-color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 0;
+}
+
+.question-textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  border: none;
+  padding: 12px;
+  font-size: 15px;
+  background-color: #f1f1f1;
+  font-family: inherit;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.char-count {
+  font-size: 13px;
+  color: #555;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.timer-dropdown {
+  position: absolute;
+  top: -43px;
+  right: 3px;
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 4px 8px;
+  border-radius: 6px;
+  gap: 6px;
+}
+
+.timer-select {
+  padding: 6px 10px;
+  font-size: 14px;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  cursor: pointer;
+  appearance: none;
+}
+
+.dropdown-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dropdown-icon {
+  width: 19px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.edit-options-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 1px;
+  margin-top: 30px;
+}
+
+.options-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.options-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.option-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.option-bullet {
+  background-color: #7a42f4;
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  font-weight: bold;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.option-input {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 12px 16px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+  font-family: inherit;
+}
+
+.add-option-button {
+  margin-top: 12px;
+  padding: 15px 16px;
+  border: 1.5px solid rgba(116, 81, 182, 1);
+  color: rgba(116, 81, 182, 1);
+  border-radius: 14px;
+  background-color: transparent;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-option-button:hover {
+  background-color: #f4ebff;
+}
+
+.options-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 4px;
+}
+
+.correct-heading {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  margin-top: -35px;
+}
+
+.correct-group {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.correct-radio {
+  display: flex;
+  gap: 18px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.correct-radio input[type="radio"] {
+  margin-right: 6px;
+  accent-color: #7a42f4;
+  width: 16px;
+  height: 16px;
+}
+.teacher-horizontal-line {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw; /* full viewport width */
+  height: 0;
+  border-top: 1px solid rgba(182, 182, 182, 1);
+  opacity: 1;
+  margin-top: 40px; /* space above */
+  margin-bottom: 20px; /* space below */
+}
+
+
+.ask-question-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.ask-question-button {
+  background: linear-gradient(99.18deg, #8F64E1 -46.89%, #1D68BD 223.45%);
+  width: 283.93px;
+  height: 57.58px;
+  border-radius: 34px;
+  padding: 17px 70px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  gap: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  /* margin-left not needed unless you want space from left siblings */
+}
