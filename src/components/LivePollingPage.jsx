@@ -72,20 +72,21 @@ useEffect(() => {
 }, []);
 
 
-  const fetchHistory = async () => {
-    try {
-      const res = await fetch(
-        "https://polling-system-backend-o7sq.onrender.com/poll-history"
-      );
-      if (res.ok) {
-        const data = await res.json();
-        setHistory(data);
-        setShowHistory(true);
-      }
-    } catch (error) {
-      console.error("Failed to fetch poll history:", error);
+const fetchHistory = async () => {
+  try {
+    const res = await fetch(
+      `${process.env.REACT_APP_BACKEND_URL}/poll-history`
+    );
+    if (res.ok) {
+      const data = await res.json();
+      setHistory(data);
+      setShowHistory(true);
     }
-  };
+  } catch (error) {
+    console.error("Failed to fetch poll history:", error);
+  }
+};
+
 
   const handleNextQuestion = () => {
     navigate("/teacher");

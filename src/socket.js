@@ -1,3 +1,8 @@
 import { io } from "socket.io-client";
-const socket = io("https://polling-system-backend-o7sq.onrender.com/"); // change this URL for deployment
+
+const BACKEND_URL =
+  process.env.REACT_APP_BACKEND_URL || "http://localhost:4000";
+
+const socket = io(BACKEND_URL);
+
 export default socket;
