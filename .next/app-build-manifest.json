@@ -1,42 +1,25 @@
 {
   "pages": {
-    "/_not-found/page": [
-      "static/chunks/webpack-2ba869abcbd9353a.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-e3d1c85aeff8c89d.js",
-      "static/chunks/main-app-5c6cb67fd313670e.js",
-      "static/chunks/app/_not-found/page-d21b06965820fef1.js"
-    ],
     "/layout": [
-      "static/chunks/webpack-2ba869abcbd9353a.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-e3d1c85aeff8c89d.js",
-      "static/chunks/main-app-5c6cb67fd313670e.js",
-      "static/css/e6baafef5d56ce6d.css",
-      "static/chunks/app/layout-93a021323b9985aa.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
     ],
     "/page": [
-      "static/chunks/webpack-2ba869abcbd9353a.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-e3d1c85aeff8c89d.js",
-      "static/chunks/main-app-5c6cb67fd313670e.js",
-      "static/chunks/app/page-640705ba33cf008c.js"
-    ],
-    "/student/page": [
-      "static/chunks/webpack-2ba869abcbd9353a.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-e3d1c85aeff8c89d.js",
-      "static/chunks/main-app-5c6cb67fd313670e.js",
-      "static/chunks/829-fa5ba33bada845b8.js",
-      "static/chunks/app/student/page-8f02f3e9c28a4ad2.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
     ],
     "/teacher/page": [
-      "static/chunks/webpack-2ba869abcbd9353a.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-e3d1c85aeff8c89d.js",
-      "static/chunks/main-app-5c6cb67fd313670e.js",
-      "static/chunks/829-fa5ba33bada845b8.js",
-      "static/chunks/app/teacher/page-3ca656d806a7aee7.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/teacher/page.js"
+    ],
+    "/student/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/student/page.js"
     ]
   }
 }
